@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "portfolio",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "5500", "--directory", "/Volumes/Crucial X9/porfolio-gráfico/Diego_porfolio"],
+      "port": 5500
+    }
+  ]
+}
