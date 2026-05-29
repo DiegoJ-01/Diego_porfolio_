@@ -3,81 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV & Contacto — Diego Esteban Ruiz</title>
+  <title>CV &amp; Contacto — Diego Esteban Ruiz</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
-  <div class="page-layout">
+  <div class="page-layout-top">
+
+    <!-- ── TOPNAV ──────────────────────────────────────────── -->
+    <nav class="topnav">
+      <a href="../index.html" class="topnav-logo">DER</a>
+      <a href="../index.html" class="topnav-brand">Diego Esteban Ruiz</a>
+
+      <div class="topnav-links">
+        <a href="work.html"          class="topnav-link" data-i18n="nav_work">Work</a>
+        <a href="cv.html"            class="topnav-link is-active" data-i18n="nav_cv">CV</a>
+        <a href="cv.html#contacto"   class="topnav-link" data-i18n="nav_contacto">Contacto</a>
+      </div>
+
+      <div class="topnav-controls">
+        <button class="ctrl-btn lang-btn" id="langToggle">EN</button>
+        <button class="ctrl-btn icon-btn" id="themeToggle">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+            <circle cx="12" cy="12" r="4.5"/>
+            <line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ── CONTENT ─────────────────────────────────────────── -->
     <div class="page-main">
+      <section class="page-content" style="max-width:1100px; margin:0 auto; width:100%;">
 
-      <aside class="page-sidebar sidebar-inner" style="padding:18px 14px 14px;">
-        <div class="sidebar-header">
-          <div class="controls">
-            <button class="ctrl-btn lang-btn" id="langToggle">EN</button>
-            <div class="ctrl-right">
-              <button class="ctrl-btn icon-btn" id="themeToggle">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
-                  <circle cx="12" cy="12" r="4.5"/>
-                  <line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/>
-                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-                  <line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/>
-                  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-                </svg>
-              </button>
-            </div>
-          </div>
-          <h1 class="brand-name"><a href="../index.html" style="color:inherit;">DIEGO<br>ESTEBAN<br>RUIZ</a></h1>
-          <div class="time-display">
-            <span id="timeDay"></span>
-            <span class="time-city" id="timeClock"></span>
-          </div>
-        </div>
+        <!-- CV section -->
+        <h2 class="page-heading" data-i18n="page_cv">CV</h2>
+        <p class="page-subheading" data-i18n="page_cv_sub">Trayectoria profesional.</p>
 
-        <nav class="sidebar-nav">
-          <div class="nav-card nav-card--about" style="cursor:default;">
-            <div class="about-photo"><div class="photo-placeholder">DER</div></div>
-            <div class="about-text">
-              <p class="about-desc" data-i18n="about_desc">Diseñador gráfico y director de arte con base en España.</p>
-            </div>
-          </div>
-          <a href="premiados.html"      class="nav-card nav-card--section nav-card--accent"          data-section="awards"><span class="nav-card-label" data-i18n="nav_awards">Premiados</span><span class="nav-arrow">→</span></a>
-          <a href="direccion-arte.html" class="nav-card nav-card--section"                           data-section="art-direction"><span class="nav-card-label" data-i18n="nav_artdir">Dirección de Arte</span><span class="nav-arrow">→</span></a>
-          <a href="3d-video.html"       class="nav-card nav-card--section nav-card--large"           data-section="3d-video"><span class="nav-card-label" data-i18n="nav_3d">3D y Video</span><span class="nav-arrow">→</span></a>
-          <a href="cv.html"             class="nav-card nav-card--section is-active"                 data-section="cv"><span class="nav-card-label" data-i18n="nav_cv">CV &amp; Contacto</span><span class="nav-arrow">→</span></a>
-        </nav>
-      </aside>
-
-      <section class="page-content">
-        <a href="../index.html" class="back-link" data-i18n="back">← Inicio</a>
-
-        <h2 class="page-heading" data-i18n="page_cv">CV &amp; Contacto</h2>
-        <p class="page-subheading" data-i18n="page_cv_sub">Trayectoria profesional y formas de contacto.</p>
-
-        <!-- CV grid: experiencia + formación -->
         <div class="cv-grid">
 
           <div class="cv-col">
             <h3 class="cv-col-title">Experiencia</h3>
-
             <div class="cv-entry">
               <p class="cv-entry-year">2023 — Presente</p>
               <p class="cv-entry-title">Diseñador Gráfico Senior</p>
               <p class="cv-entry-place">Estudio / Freelance — España</p>
             </div>
-
             <div class="cv-entry">
               <p class="cv-entry-year">2021 — 2023</p>
               <p class="cv-entry-title">Director de Arte</p>
               <p class="cv-entry-place">Agencia — Barcelona</p>
             </div>
-
             <div class="cv-entry">
               <p class="cv-entry-year">2019 — 2021</p>
               <p class="cv-entry-title">Diseñador Gráfico</p>
               <p class="cv-entry-place">Estudio — Madrid</p>
             </div>
-
             <div class="cv-entry">
               <p class="cv-entry-year">2018 — 2019</p>
               <p class="cv-entry-title">Diseñador Junior</p>
@@ -87,44 +71,37 @@
 
           <div class="cv-col">
             <h3 class="cv-col-title">Formación</h3>
-
             <div class="cv-entry">
               <p class="cv-entry-year">2014 — 2018</p>
               <p class="cv-entry-title">Grado en Diseño Gráfico</p>
               <p class="cv-entry-place">ESDI / BAU — Barcelona</p>
             </div>
-
-            <div class="cv-entry">
-              <p class="cv-entry-year">2019</p>
-              <p class="cv-entry-title">Motion Graphics &amp; 3D</p>
-              <p class="cv-entry-place">Curso — Online</p>
-            </div>
-
             <div class="cv-entry">
               <p class="cv-entry-year">2022</p>
               <p class="cv-entry-title">Dirección de Arte Publicitaria</p>
               <p class="cv-entry-place">Máster — Madrid</p>
             </div>
+            <div class="cv-entry">
+              <p class="cv-entry-year">2019</p>
+              <p class="cv-entry-title">Motion Graphics &amp; 3D</p>
+              <p class="cv-entry-place">Curso — Online</p>
+            </div>
           </div>
 
           <div class="cv-col">
             <h3 class="cv-col-title">Habilidades</h3>
-
             <div class="cv-entry">
               <p class="cv-entry-title">Identidad Visual &amp; Branding</p>
               <p class="cv-entry-place">Figma, Illustrator, InDesign</p>
             </div>
-
             <div class="cv-entry">
               <p class="cv-entry-title">Dirección de Arte</p>
               <p class="cv-entry-place">Fotografía, Retoque, Composición</p>
             </div>
-
             <div class="cv-entry">
               <p class="cv-entry-title">Motion &amp; 3D</p>
               <p class="cv-entry-place">After Effects, Blender, Cinema 4D</p>
             </div>
-
             <div class="cv-entry">
               <p class="cv-entry-title">Web &amp; Digital</p>
               <p class="cv-entry-place">HTML, CSS, Webflow, Framer</p>
@@ -133,35 +110,41 @@
 
         </div>
 
-        <!-- Contact block -->
-        <div class="contact-block">
-          <div>
-            <p style="font-size:15px;font-weight:500;color:var(--text);margin-bottom:6px;" data-i18n="contact_intro">¿Tienes un proyecto en mente?</p>
-            <p style="font-size:11.5px;color:var(--text-muted);">hola@diegoestebanruiz.com</p>
-          </div>
-          <div class="contact-links">
-            <a href="mailto:hola@diegoestebanruiz.com" class="contact-link">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              Email
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-link">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-              LinkedIn
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener" class="contact-link">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
-              Instagram
-            </a>
-            <a href="https://behance.net" target="_blank" rel="noopener" class="contact-link">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H15.97c.13 3.211 3.483 3.312 4.588 2.029H23.7zM15.999 13h4.999c-.31-1.827-1.61-2.223-2.502-2.223-1.023 0-2.277.424-2.497 2.223zM5.452 8H1v8h4.452c1.563 0 4.048-.293 4.048-3.338C9.5 9.2 6.996 8 5.452 8zm-.24 5.4H3.5v-2.8h1.713c.857 0 1.713.191 1.713 1.4 0 1.324-.905 1.4-1.714 1.4z"/></svg>
-              Behance
-            </a>
+        <!-- Contact section -->
+        <div id="contacto" style="padding-top:64px; border-top:1px solid var(--border-card); margin-top:64px;">
+          <h2 class="page-heading" data-i18n="page_contacto">Contacto</h2>
+          <p class="page-subheading" data-i18n="page_contacto_sub">¿Tienes un proyecto en mente?</p>
+
+          <div class="contact-block">
+            <div>
+              <p style="font-size:15px;font-weight:500;color:var(--text);margin-bottom:6px;" data-i18n="contact_intro">¿Tienes un proyecto en mente?</p>
+              <p style="font-size:11.5px;color:var(--text-muted);">hola@diegoestebanruiz.com</p>
+            </div>
+            <div class="contact-links">
+              <a href="mailto:hola@diegoestebanruiz.com" class="contact-link">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                Email
+              </a>
+              <a href="https://linkedin.com"  target="_blank" rel="noopener" class="contact-link">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener" class="contact-link">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+                Instagram
+              </a>
+              <a href="https://behance.net"   target="_blank" rel="noopener" class="contact-link">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H15.97c.13 3.211 3.483 3.312 4.588 2.029H23.7zM15.999 13h4.999c-.31-1.827-1.61-2.223-2.502-2.223-1.023 0-2.277.424-2.497 2.223zM5.452 8H1v8h4.452c1.563 0 4.048-.293 4.048-3.338C9.5 9.2 6.996 8 5.452 8zm-.24 5.4H3.5v-2.8h1.713c.857 0 1.713.191 1.713 1.4 0 1.324-.905 1.4-1.714 1.4z"/></svg>
+                Behance
+              </a>
+            </div>
           </div>
         </div>
 
       </section>
     </div>
 
+    <!-- ── FOOTER ───────────────────────────────────────────── -->
     <footer class="footer">
       <div class="footer-static">
         <div class="footer-left">
@@ -171,9 +154,9 @@
         </div>
         <div class="footer-links">
           <a href="mailto:hola@diegoestebanruiz.com" class="footer-link">Email</a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+          <a href="https://linkedin.com"  target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
           <a href="https://instagram.com" target="_blank" rel="noopener" class="footer-link">Instagram</a>
-          <a href="https://behance.net" target="_blank" rel="noopener" class="footer-link">Behance</a>
+          <a href="https://behance.net"   target="_blank" rel="noopener" class="footer-link">Behance</a>
           <span class="footer-year">© 2025</span>
         </div>
       </div>
