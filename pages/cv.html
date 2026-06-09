@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV &amp; Contacto — Diego Esteban Ruiz</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style.css?v=5">
 </head>
 <body>
 
@@ -13,7 +13,6 @@
     <!-- ── TOPNAV ──────────────────────────────────────────── -->
     <nav class="topnav">
       <a href="../index.html" class="topnav-logo">DER</a>
-      <a href="../index.html" class="topnav-brand">Diego Esteban Ruiz</a>
 
       <div class="topnav-links">
         <a href="work.html"          class="topnav-link" data-i18n="nav_work">Work</a>
@@ -43,70 +42,153 @@
         <h2 class="page-heading" data-i18n="page_cv">CV</h2>
         <p class="page-subheading" data-i18n="page_cv_sub">Trayectoria profesional.</p>
 
-        <div class="cv-grid">
+        <!-- Perfil -->
+        <div class="cv-profile">
+          <h3 class="cv-col-title" data-i18n="cv_profile">Perfil</h3>
+          <p class="cv-profile-text" data-lang="es">Diseñador gráfico y multimedia junior con interés en publicidad, dirección de arte y 3D. Mi trabajo se centra en la creación de experiencias visuales que combinan concepto, composición y comunicación. Me interesa especialmente el branding, las campañas creativas, el diseño editorial y la visualización 3D, buscando incorporarme a un entorno creativo donde seguir desarrollando mi criterio visual y capacidad estratégica.</p>
+          <p class="cv-profile-text" data-lang="en">Junior graphic and multimedia designer with an interest in advertising, art direction and 3D. My work focuses on creating visual experiences that combine concept, composition and communication. I'm especially interested in branding, creative campaigns, editorial design and 3D visualisation, looking to join a creative environment where I can keep developing my visual judgement and strategic thinking.</p>
+        </div>
 
-          <div class="cv-col">
-            <h3 class="cv-col-title">Experiencia</h3>
-            <div class="cv-entry">
-              <p class="cv-entry-year">2023 — Presente</p>
-              <p class="cv-entry-title">Diseñador Gráfico Senior</p>
-              <p class="cv-entry-place">Estudio / Freelance — España</p>
+        <div class="cv-layout">
+
+          <!-- Columna principal: Experiencia + Formación -->
+          <div class="cv-main">
+
+            <div class="cv-block">
+              <h3 class="cv-col-title" data-i18n="cv_experience">Experiencia</h3>
+
+              <div class="cv-entry">
+                <p class="cv-entry-year"><span data-lang="es">Oct 2025 — Abr 2026</span><span data-lang="en">Oct 2025 — Apr 2026</span></p>
+                <p class="cv-entry-title"><span data-lang="es">Diseñador Gráfico RRSS</span><span data-lang="en">Social Media Graphic Designer</span></p>
+                <p class="cv-entry-place">Carrefour España</p>
+                <ul class="cv-bullets" data-lang="es">
+                  <li>Diseño de contenidos visuales para Instagram, Facebook y comunicación interna.</li>
+                  <li>Desarrollo de creatividades para campañas comerciales y comunicación de marca.</li>
+                  <li>Adaptación de piezas gráficas para formatos digitales y social media.</li>
+                  <li>Creación de contenido alineado con los ejes de comunicación de la marca.</li>
+                  <li>Colaboración con equipos de marketing y comunicación en la planificación de campañas.</li>
+                </ul>
+                <ul class="cv-bullets" data-lang="en">
+                  <li>Visual content design for Instagram, Facebook and internal communication.</li>
+                  <li>Development of creative assets for commercial campaigns and brand communication.</li>
+                  <li>Adaptation of graphic pieces for digital and social media formats.</li>
+                  <li>Creation of content aligned with the brand's communication pillars.</li>
+                  <li>Collaboration with marketing and communication teams on campaign planning.</li>
+                </ul>
+              </div>
+
+              <div class="cv-entry">
+                <p class="cv-entry-year"><span data-lang="es">Jul 2023 — Oct 2025</span><span data-lang="en">Jul 2023 —  Oct 2025</span></p>
+                <p class="cv-entry-title"><span data-lang="es">Gestor de Red</span><span data-lang="en">Network Manager</span></p>
+                <p class="cv-entry-place">Multiasistencia, Madrid</p>
+                <ul class="cv-bullets" data-lang="es">
+                  <li>Coordinación y gestión de profesionales a nivel nacional.</li>
+                  <li>Resolución de incidencias y seguimiento de procesos operativos.</li>
+                  <li>Organización y supervisión de servicios para garantizar el cumplimiento de plazos.</li>
+                  <li>Desarrollo de habilidades de comunicación, gestión de incidencias y trabajo bajo presión.</li>
+                </ul>
+                <ul class="cv-bullets" data-lang="en">
+                  <li>Coordination and management of professionals nationwide.</li>
+                  <li>Issue resolution and follow-up of operational processes.</li>
+                  <li>Organisation and supervision of services to ensure deadlines are met.</li>
+                  <li>Development of communication, incident-management and pressure-handling skills.</li>
+                </ul>
+              </div>
+
+              <div class="cv-entry">
+                <p class="cv-entry-year">2023</p>
+                <p class="cv-entry-title"><span data-lang="es">Fotógrafo de Producto y Gestor Web</span><span data-lang="en">Product Photographer & Web Manager</span></p>
+                <p class="cv-entry-place">Ocasión Plus</p>
+                <ul class="cv-bullets" data-lang="es">
+                  <li>Fotografía de vehículos para web y plataformas digitales.</li>
+                  <li>Edición y optimización de imágenes para entornos online.</li>
+                  <li>Gestión y publicación de contenido web.</li>
+                </ul>
+                <ul class="cv-bullets" data-lang="en">
+                  <li>Vehicle photography for web and digital platforms.</li>
+                  <li>Image editing and optimisation for online environments.</li>
+                  <li>Web content management and publishing.</li>
+                </ul>
+              </div>
+
+              <div class="cv-entry">
+                <p class="cv-entry-year">2022</p>
+                <p class="cv-entry-title"><span data-lang="es">Técnico de Vídeo (Prácticas)</span><span data-lang="en">Video Technician (Internship)</span></p>
+                <p class="cv-entry-place">Fluge Audiovisuales</p>
+                <ul class="cv-bullets" data-lang="es">
+                  <li>Apoyo técnico en producciones audiovisuales y eventos en directo.</li>
+                  <li>Montaje, grabación y edición de contenidos audiovisuales.</li>
+                </ul>
+                <ul class="cv-bullets" data-lang="en">
+                  <li>Technical support in audiovisual productions and live events.</li>
+                  <li>Editing, recording and post-production of audiovisual content.</li>
+                </ul>
+              </div>
             </div>
-            <div class="cv-entry">
-              <p class="cv-entry-year">2021 — 2023</p>
-              <p class="cv-entry-title">Director de Arte</p>
-              <p class="cv-entry-place">Agencia — Barcelona</p>
+
+            <div class="cv-block">
+              <h3 class="cv-col-title" data-i18n="cv_education">Formación</h3>
+
+              <div class="cv-entry">
+                <p class="cv-entry-year"><span data-lang="es">2023 — Actualidad</span><span data-lang="en">2023 — Present</span></p>
+                <p class="cv-entry-title"><span data-lang="es">Grado en Diseño Gráfico y Multimedia</span><span data-lang="en">Degree in Graphic & Multimedia Design</span></p>
+                <p class="cv-entry-place">UDIT — Universidad de Diseño, Innovación y Tecnología, Madrid</p>
+              </div>
+
+              <div class="cv-entry">
+                <p class="cv-entry-year">2020 — 2022</p>
+                <p class="cv-entry-title"><span data-lang="es">Técnico Superior en Realización de Proyectos Audiovisuales y Espectáculos</span><span data-lang="en">Higher Technician in Audiovisual & Live Event Production</span></p>
+                <p class="cv-entry-place">Escuela CES, Madrid</p>
+              </div>
             </div>
-            <div class="cv-entry">
-              <p class="cv-entry-year">2019 — 2021</p>
-              <p class="cv-entry-title">Diseñador Gráfico</p>
-              <p class="cv-entry-place">Estudio — Madrid</p>
-            </div>
-            <div class="cv-entry">
-              <p class="cv-entry-year">2018 — 2019</p>
-              <p class="cv-entry-title">Diseñador Junior</p>
-              <p class="cv-entry-place">Startup — Barcelona</p>
-            </div>
+
           </div>
 
-          <div class="cv-col">
-            <h3 class="cv-col-title">Formación</h3>
-            <div class="cv-entry">
-              <p class="cv-entry-year">2014 — 2018</p>
-              <p class="cv-entry-title">Grado en Diseño Gráfico</p>
-              <p class="cv-entry-place">ESDI / BAU — Barcelona</p>
-            </div>
-            <div class="cv-entry">
-              <p class="cv-entry-year">2022</p>
-              <p class="cv-entry-title">Dirección de Arte Publicitaria</p>
-              <p class="cv-entry-place">Máster — Madrid</p>
-            </div>
-            <div class="cv-entry">
-              <p class="cv-entry-year">2019</p>
-              <p class="cv-entry-title">Motion Graphics &amp; 3D</p>
-              <p class="cv-entry-place">Curso — Online</p>
-            </div>
-          </div>
+          <!-- Aside: Premios + Herramientas + Idiomas -->
+          <aside class="cv-aside">
 
-          <div class="cv-col">
-            <h3 class="cv-col-title">Habilidades</h3>
-            <div class="cv-entry">
-              <p class="cv-entry-title">Identidad Visual &amp; Branding</p>
-              <p class="cv-entry-place">Figma, Illustrator, InDesign</p>
+            <div class="cv-block">
+              <h3 class="cv-col-title" data-i18n="cv_awards">Premios</h3>
+              <div class="cv-entry">
+                <p class="cv-entry-year">2026</p>
+                <p class="cv-entry-title">Young Ones Student Awards</p>
+                <p class="cv-entry-place"><span data-lang="es">Mérito × 2 · The One Club for Creativity, Nueva York</span><span data-lang="en">Merit Award × 2 · The One Club for Creativity, New York</span></p>
+                <ul class="cv-bullets">
+                  <li>Zero Miles — <span data-lang="es">Campaña Integrada</span><span data-lang="en">Integrated Campaign</span></li>
+                  <li>Text Zero — <span data-lang="es">Campaña Integrada</span><span data-lang="en">Integrated Campaign</span></li>
+                </ul>
+              </div>
             </div>
-            <div class="cv-entry">
-              <p class="cv-entry-title">Dirección de Arte</p>
-              <p class="cv-entry-place">Fotografía, Retoque, Composición</p>
+
+            <div class="cv-block">
+              <h3 class="cv-col-title" data-i18n="cv_tools">Herramientas</h3>
+              <div class="cv-entry">
+                <p class="cv-entry-title">Adobe Suite</p>
+                <p class="cv-entry-place">Photoshop · Illustrator · InDesign · After Effects · Premiere Pro</p>
+              </div>
+              <div class="cv-entry">
+                <p class="cv-entry-title">3D</p>
+                <p class="cv-entry-place">Cinema 4D · Redshift</p>
+              </div>
+              <div class="cv-entry">
+                <p class="cv-entry-title">UI / Web</p>
+                <p class="cv-entry-place">Figma · HTML · CSS</p>
+              </div>
             </div>
-            <div class="cv-entry">
-              <p class="cv-entry-title">Motion &amp; 3D</p>
-              <p class="cv-entry-place">After Effects, Blender, Cinema 4D</p>
+
+            <div class="cv-block">
+              <h3 class="cv-col-title" data-i18n="cv_languages">Idiomas</h3>
+              <div class="cv-entry">
+                <p class="cv-entry-title"><span data-lang="es">Español</span><span data-lang="en">Spanish</span></p>
+                <p class="cv-entry-place"><span data-lang="es">Nativo</span><span data-lang="en">Native</span></p>
+              </div>
+              <div class="cv-entry">
+                <p class="cv-entry-title"><span data-lang="es">Inglés</span><span data-lang="en">English</span></p>
+                <p class="cv-entry-place">C1</p>
+              </div>
             </div>
-            <div class="cv-entry">
-              <p class="cv-entry-title">Web &amp; Digital</p>
-              <p class="cv-entry-place">HTML, CSS, Webflow, Framer</p>
-            </div>
-          </div>
+
+          </aside>
 
         </div>
 
@@ -118,24 +200,16 @@
           <div class="contact-block">
             <div>
               <p style="font-size:15px;font-weight:500;color:var(--text);margin-bottom:6px;" data-i18n="contact_intro">¿Tienes un proyecto en mente?</p>
-              <p style="font-size:11.5px;color:var(--text-muted);">hola@diegoestebanruiz.com</p>
+              <p style="font-size:11.5px;color:var(--text-muted);">Madrid, <span data-lang="es">España</span><span data-lang="en">Spain</span></p>
             </div>
             <div class="contact-links">
-              <a href="mailto:hola@diegoestebanruiz.com" class="contact-link">
+              <a href="mailto:estebanruizdiego@gmail.com" class="contact-link">
                 <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                 Email
               </a>
-              <a href="https://linkedin.com"  target="_blank" rel="noopener" class="contact-link">
+              <a href="https://www.linkedin.com/in/diego-esteban-ruiz-73191a244" target="_blank" rel="noopener" class="contact-link">
                 <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
                 LinkedIn
-              </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener" class="contact-link">
-                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
-                Instagram
-              </a>
-              <a href="https://behance.net"   target="_blank" rel="noopener" class="contact-link">
-                <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H15.97c.13 3.211 3.483 3.312 4.588 2.029H23.7zM15.999 13h4.999c-.31-1.827-1.61-2.223-2.502-2.223-1.023 0-2.277.424-2.497 2.223zM5.452 8H1v8h4.452c1.563 0 4.048-.293 4.048-3.338C9.5 9.2 6.996 8 5.452 8zm-.24 5.4H3.5v-2.8h1.713c.857 0 1.713.191 1.713 1.4 0 1.324-.905 1.4-1.714 1.4z"/></svg>
-                Behance
               </a>
             </div>
           </div>
@@ -153,10 +227,8 @@
           <span class="footer-role" data-i18n="footer_role">Diseñador Gráfico</span>
         </div>
         <div class="footer-links">
-          <a href="mailto:hola@diegoestebanruiz.com" class="footer-link">Email</a>
-          <a href="https://linkedin.com"  target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
-          <a href="https://instagram.com" target="_blank" rel="noopener" class="footer-link">Instagram</a>
-          <a href="https://behance.net"   target="_blank" rel="noopener" class="footer-link">Behance</a>
+          <a href="mailto:estebanruizdiego@gmail.com" class="footer-link">Email</a>
+          <a href="https://www.linkedin.com/in/diego-esteban-ruiz-73191a244"  target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
           <span class="footer-year">© 2025</span>
         </div>
       </div>
@@ -169,6 +241,6 @@
     </footer>
   </div>
 
-  <script src="../js/common.js"></script>
+  <script src="../js/common.js?v=5"></script>
 </body>
 </html>

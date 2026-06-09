@@ -2,35 +2,28 @@
 
 const SLIDES = [
   {
+    // ── 01 Study Cases ──
     bg:    'linear-gradient(160deg,#0e0c0c 0%,#000 100%)',
     image: 'https://res.cloudinary.com/drlwejyl9/image/upload/q_auto/f_auto/v1779837370/lata_1_1_drdvrg.jpg',
     title: 'Text 0',
     category: 'Study Cases',
-    year: '2024',
+    year: '2026',
   },
   {
-    bg: 'linear-gradient(160deg,#1e1a14 0%,#0a0806 100%)',
-    title: 'Campaña SS25',
-    category: 'Art Direction',
-    year: '2025',
-  },
-  {
-    bg: 'linear-gradient(160deg,#0e1220 0%,#04060e 100%)',
-    title: 'Brand Motion',
+    // ── 02 3D y Video ──
+    bg:    'linear-gradient(160deg,#0e1220 0%,#04060e 100%)',
+    image: 'https://res.cloudinary.com/drlwejyl9/image/upload/q_auto/f_auto/v1780532329/salt_y_stpne_0450_k6atm6.jpg',
+    title: 'Salt & Stone',
     category: '3D & Video',
-    year: '2024',
+    year: '2026',
   },
   {
-    bg: 'linear-gradient(160deg,#10122a 0%,#060718 100%)',
-    title: 'Product\nVisualization',
-    category: '3D / Blender',
-    year: '2025',
-  },
-  {
-    bg: 'linear-gradient(160deg,#1c1a18 0%,#080806 100%)',
-    title: 'Editorial AW24',
+    // ── 03 Dirección de Arte ──
+    bg:    'linear-gradient(160deg,#1c1a18 0%,#080806 100%)',
+    image: 'https://res.cloudinary.com/drlwejyl9/image/upload/q_auto/f_auto/v1780624758/cartel_hh_offbnd.png',
+    title: 'Cenefa Contemporánea',
     category: 'Art Direction',
-    year: '2024',
+    year: '2025',
   },
 ];
 

@@ -717,6 +717,55 @@ body {
 .cv-grid { display: flex; gap: 44px; flex-wrap: wrap; }
 .cv-col  { flex: 1 1 240px; }
 
+/* CV — perfil */
+.cv-profile { margin-bottom: 52px; max-width: 760px; }
+.cv-profile-text {
+  font-size: 15px;
+  line-height: 1.72;
+  color: var(--text-muted);
+  margin-top: 16px;
+}
+
+/* CV — layout principal + aside */
+.cv-layout {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.cv-block { margin-bottom: 44px; }
+.cv-block:last-child { margin-bottom: 0; }
+
+/* CV — viñetas de responsabilidades */
+.cv-bullets {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+}
+.cv-bullets li {
+  position: relative;
+  padding-left: 16px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin-bottom: 5px;
+}
+.cv-bullets li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+@media (max-width: 760px) {
+  .cv-layout { grid-template-columns: 1fr; gap: 40px; }
+}
+
 .cv-col-title {
   font-size: 10px;
   letter-spacing: 0.2em;
@@ -856,28 +905,49 @@ body {
   border-radius: 20px;
   background: var(--accent-dim);
   line-height: 1.4;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
 }
 
-/* Cover */
+a.story-award:hover {
+  background: rgba(224,39,28,0.18);
+  border-color: var(--accent);
+  color: var(--accent-light);
+}
+
+/* Cover — natural proportions, full image always visible */
 .story-cover {
   width: 100%;
-  aspect-ratio: 16/9;
   overflow: hidden;
   border-radius: 4px;
-  margin-bottom: 0;
   background: #0a0a0a;
-  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .story-cover img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  max-height: 88vh;
   display: block;
+  object-fit: contain;
   transition: transform 0.5s var(--ease);
 }
 
-.project-story:hover .story-cover img { transform: scale(1.02); }
+.project-story:hover .story-cover img { transform: scale(1.015); }
+
+/* Carrusel cuadrado 1:1 */
+.pi-carousel--square .pi-carousel-item {
+  aspect-ratio: 1/1;
+  height: clamp(280px, 46vh, 560px);
+  width: auto;
+}
+
+.pi-carousel--square .pi-carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
 .story-cover-ph {
   width: 100%;
@@ -891,6 +961,37 @@ body {
   text-transform: uppercase;
   color: rgba(255,255,255,0.13);
 }
+
+/* Video embed */
+.story-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #000;
+}
+
+.story-video iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border: none;
+  display: block;
+}
+
+.story-video video {
+  width: 100%;
+  height: auto;
+  max-height: 88vh;
+  display: block;
+  object-fit: contain;
+}
+
+/* ─── BILINGÜE — visibilidad según idioma activo ─────────── */
+/* Oculta el idioma que no está activo. Controlado por html[data-lang]. */
+html[data-lang="es"] [data-lang="en"] { display: none !important; }
+html[data-lang="en"] [data-lang="es"] { display: none !important; }
 
 /* Description bar */
 .story-desc {
@@ -953,6 +1054,19 @@ body {
 .pi-wide   { flex: 2 !important; }
 .pi-narrow { flex: 1 !important; }
 
+/* Natural proportions — no crop, images scale to fit */
+.pi-row--natural {
+  height: auto !important;
+  align-items: flex-start;
+}
+
+.pi-row--natural img {
+  height: auto !important;
+  width: 100%;
+  object-fit: contain !important;
+  max-height: none;
+}
+
 .pi-ph {
   background: linear-gradient(135deg, var(--ph-a,#111), var(--ph-b,#1a1a1a));
   display: flex;
@@ -966,6 +1080,63 @@ body {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: rgba(255,255,255,0.14);
+}
+
+/* ─── PI SECTION LABEL ───────────────────────────────────── */
+.pi-label {
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  padding-top: 20px;
+  padding-bottom: 6px;
+  border-top: 1px solid var(--border-card);
+  margin-top: 14px;
+}
+
+/* ─── PI CAROUSEL — auto-scroll infinito (marquee style) ─── */
+.pi-carousel {
+  overflow: hidden;
+  border-radius: 3px;
+  cursor: default;
+}
+
+/* Track: flex row con animación de traslación */
+.pi-carousel-track {
+  display: flex;
+  gap: 6px;
+  width: max-content;
+  animation: pi-marquee var(--pi-dur, 10s) linear infinite;
+  will-change: transform;
+}
+
+/* Dirección inversa (scroll hacia la derecha) */
+.pi-carousel-track--reverse {
+  animation-direction: reverse;
+}
+
+/* Pausa al hover */
+.pi-carousel:hover .pi-carousel-track {
+  animation-play-state: paused;
+}
+
+@keyframes pi-marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.pi-carousel-item {
+  flex-shrink: 0;
+  height: clamp(280px, 46vh, 560px);
+  border-radius: 3px;
+  overflow: hidden;
+  background: #0a0a0a;
+}
+
+.pi-carousel-item img {
+  height: 100%;
+  width: auto;
+  display: block;
 }
 
 /* ─── LIGHTBOX ───────────────────────────────────────────── */
